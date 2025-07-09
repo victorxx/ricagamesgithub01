@@ -106,14 +106,18 @@
     user-select: none;
   }
 
+  /* Propaganda no topo */
   #propaganda-piscante {
-    top: 20px;
-    right: 20px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
+  /* Propaganda no rodapé */
   #propaganda-piscante2 {
-    top: 20px;
-    left: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   @keyframes piscar {
@@ -133,24 +137,10 @@
       font-size: 16px;
     }
 
-    /* Alinhar propagandas em coluna no mobile */
+    /* Reduz o tamanho das propagandas no mobile */
     #propaganda-piscante, #propaganda-piscante2 {
       font-size: 14px;
       padding: 8px 12px;
-      top: auto;
-      bottom: 20px;
-      position: absolute;
-    }
-
-    #propaganda-piscante {
-      left: 50%;
-      transform: translateX(-50%);
-      margin-bottom: 10px; /* Espaçamento entre as propagandas */
-    }
-
-    #propaganda-piscante2 {
-      left: 50%;
-      transform: translateX(-50%);
     }
   }
   </style>
